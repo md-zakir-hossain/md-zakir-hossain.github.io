@@ -3,10 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My GitHub Page</title>
+    <title>Salman Khan Bio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            align-items: flex-start;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            display: flex;
+            flex-direction: row;
+            margin: 20px;
+        }
+        .profile-photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 20px;
+        }
+        .bio {
+            max-width: 600px;
+        }
+        .bio h1 {
+            font-size: 24px;
+            margin: 0;
+        }
+        .bio p {
+            font-size: 16px;
+            margin: 5px 0 20px;
+        }
+        .links a {
+            text-decoration: none;
+            color: #0077b5; /* LinkedIn color */
+            font-size: 16px;
+            margin-right: 15px;
+        }
+        .links a:hover {
+            color: #005682;
+        }
+    </style>
 </head>
 <body>
-    <h1>Hello, World!</h1>
-    <p>Welcome to my GitHub Page!</p>
+    <div class="container">
+        <img src="https://via.placeholder.com/150" alt="Salman Khan" class="profile-photo">
+        <div class="bio">
+            <h1>Salman Khan</h1>
+            <p>I'm a computer vision researcher affiliated with MBZUAI and ANU.</p>
+            <div class="links">
+                <a href="https://twitter.com/yourusername" target="_blank">Twitter</a>
+                <a href="https://scholar.google.com/citations?user=yourid" target="_blank">G. Scholar</a>
+                <a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a>
+                <a href="mailto:your.email@example.com">E-Mail</a>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
