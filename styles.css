@@ -1,0 +1,62 @@
+body {
+    display: flex;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar {
+    background-color: #333;
+    color: #fff;
+    width: 300px; /* Sidebar width */
+    padding: 20px;
+    position: fixed;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align items to the left */
+    text-align: left; /* Align text to the left */
+}
+
+.sidebar img {
+    width: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.sidebar h2 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.sidebar p {
+    font-size: 14px;
+    color: #ddd;
+    margin: 10px 0;
+}
+
+.sidebar a {
+    color: #1da1f2;
+    text-decoration: none;
+    margin: 5px 0;
+    display: block;
+    width: 100%; /* Ensures the link fills the width */
+}
+
+.content {
+    margin-left: 340px; /* Increased margin for more space */
+    padding: 20px;
+    width: calc(100% - 340px); /* Adjust width to fill remaining space */
+}
+
+.content h1 {
+    font-size: 24px;
+}
+
+.content a {
+    display: inline-block;
+    margin-right: 10px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
