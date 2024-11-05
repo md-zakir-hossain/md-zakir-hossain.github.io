@@ -45,7 +45,13 @@ img {
     color: #1da1f2;
     text-decoration: none;
     margin: 5px 0;
-    display: block;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar a i {
+    margin-right: 8px; /* Space between icon and text */
+    font-size: 1.2em;  /* Adjust icon size if needed */
 }
 
 /* Content */
