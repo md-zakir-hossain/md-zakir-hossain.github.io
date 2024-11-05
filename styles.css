@@ -1,21 +1,27 @@
+/* General Styles */
 body {
-    display: flex;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Sidebar */
 .sidebar {
     background-color: #333;
     color: #fff;
-    width: 300px; /* Sidebar width */
+    width: 300px;
     padding: 20px;
     position: fixed;
     height: 100vh;
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Align items to the left */
-    text-align: left; /* Align text to the left */
+    align-items: flex-start;
+    text-align: left;
 }
 
 .sidebar img {
@@ -40,13 +46,13 @@ body {
     text-decoration: none;
     margin: 5px 0;
     display: block;
-    width: 100%; /* Ensures the link fills the width */
 }
 
+/* Content */
 .content {
-    margin-left: 340px; /* Increased margin for more space */
+    margin-left: 340px;
     padding: 20px;
-    width: calc(100% - 340px); /* Adjust width to fill remaining space */
+    width: calc(100% - 340px);
 }
 
 .content h1 {
@@ -59,4 +65,42 @@ body {
     text-decoration: none;
     color: #333;
     font-weight: bold;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .sidebar {
+        position: relative;
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        padding: 10px;
+        text-align: center;
+    }
+    
+    .sidebar img {
+        width: 80px; /* Smaller image on mobile */
+        margin: 0 10px;
+    }
+
+    .sidebar h2 {
+        font-size: 16px;
+        margin: 0;
+    }
+
+    .sidebar p {
+        display: none; /* Hide description on smaller screens to save space */
+    }
+
+    .content {
+        margin-left: 0;
+        padding: 15px;
+        width: 100%;
+    }
+
+    .content h1 {
+        font-size: 20px;
+    }
 }
