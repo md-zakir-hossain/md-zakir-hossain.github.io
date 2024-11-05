@@ -3,62 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Salman Khan Bio</title>
+    <title>Md Zakir Hossain - GitHub Pages</title>
     <style>
+        /* Basic styling for layout */
         body {
-            font-family: Arial, sans-serif;
             display: flex;
-            align-items: flex-start;
             margin: 0;
-            padding: 0;
+            font-family: Arial, sans-serif;
         }
-        .container {
-            display: flex;
-            flex-direction: row;
-            margin: 20px;
+        /* Sidebar styling */
+        .sidebar {
+            width: 250px;
+            background-color: #f4f4f4;
+            padding: 20px;
+            height: 100vh;
+            box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+            position: fixed;
+        }
+        .sidebar h2, .sidebar p {
+            margin-top: 0;
         }
         .profile-photo {
-            width: 150px;
-            height: 150px;
+            width: 100%;
             border-radius: 50%;
-            object-fit: cover;
-            margin-right: 20px;
         }
-        .bio {
-            max-width: 600px;
+        .social-links {
+            list-style: none;
+            padding: 0;
         }
-        .bio h1 {
-            font-size: 24px;
-            margin: 0;
+        .social-links li {
+            margin: 10px 0;
         }
-        .bio p {
-            font-size: 16px;
-            margin: 5px 0 20px;
-        }
-        .links a {
+        .social-links a {
             text-decoration: none;
-            color: #0077b5; /* LinkedIn color */
-            font-size: 16px;
-            margin-right: 15px;
+            color: #333;
         }
-        .links a:hover {
-            color: #005682;
+        /* Main content styling */
+        .main-content {
+            margin-left: 270px; /* space for sidebar */
+            padding: 20px;
+            flex-grow: 1;
+        }
+        .main-content ul {
+            list-style: none;
+            padding: 0;
+        }
+        .main-content li {
+            margin: 10px 0;
+        }
+        .main-content a {
+            text-decoration: none;
+            color: #007acc;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <img src="https://via.placeholder.com/150" alt="Salman Khan" class="profile-photo">
-        <div class="bio">
-            <h1>Salman Khan</h1>
-            <p>I'm a computer vision researcher affiliated with MBZUAI and ANU.</p>
-            <div class="links">
-                <a href="https://twitter.com/yourusername" target="_blank">Twitter</a>
-                <a href="https://scholar.google.com/citations?user=yourid" target="_blank">G. Scholar</a>
-                <a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a>
-                <a href="mailto:your.email@example.com">E-Mail</a>
-            </div>
-        </div>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2>Md Zakir Hossain</h2>
+        <img src="bio-photo.jpg" alt="Md Zakir Hossain bio photo" class="profile-photo">
+        <p>I'm a computer vision researcher affiliated with Curtin University, CSIRO, and ANU.</p>
+        <ul class="social-links">
+            <li><a href="https://twitter.com/yourusername" target="_blank">Twitter</a></li>
+            <li><a href="https://scholar.google.com/citations?user=yourid" target="_blank">G. Scholar</a></li>
+            <li><a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn</a></li>
+            <li><a href="mailto:youremail@example.com">E-Mail</a></li>
+        </ul>
+    </div>
+    
+    <!-- Main content with links to 8 pages -->
+    <div class="main-content">
+        <h1>Linked Pages</h1>
+        <ul>
+            <li><a href="page1.html">Page 1</a></li>
+            <li><a href="page2.html">Page 2</a></li>
+            <li><a href="page3.html">Page 3</a></li>
+            <li><a href="page4.html">Page 4</a></li>
+            <li><a href="page5.html">Page 5</a></li>
+            <li><a href="page6.html">Page 6</a></li>
+            <li><a href="page7.html">Page 7</a></li>
+            <li><a href="page8.html">Page 8</a></li>
+        </ul>
     </div>
 </body>
 </html>
+
