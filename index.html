@@ -3,88 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Md Zakir Hossain - GitHub Pages</title>
+    <title>Md Zakir Hossain's GitHub Page</title>
     <style>
-        /* Basic styling for layout */
         body {
             display: flex;
-            margin: 0;
             font-family: Arial, sans-serif;
-        }
-        /* Sidebar styling */
-        .sidebar {
-            width: 250px;
-            background-color: #f4f4f4;
-            padding: 20px;
-            height: 100vh;
-            box-shadow: 2px 0 5px rgba(0,0,0,0.1);
-            position: fixed;
-        }
-        .sidebar h2, .sidebar p {
-            margin-top: 0;
-        }
-        .profile-photo {
-            width: 100%;
-            border-radius: 50%;
-        }
-        .social-links {
-            list-style: none;
+            margin: 0;
             padding: 0;
         }
-        .social-links li {
+        .sidebar {
+            background-color: #333;
+            color: #fff;
+            width: 250px;
+            padding: 20px;
+            position: fixed;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .sidebar img {
+            width: 150px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+        .sidebar h2 {
+            margin: 0;
+            font-size: 18px;
+        }
+        .sidebar p {
+            font-size: 14px;
+            color: #ddd;
             margin: 10px 0;
         }
-        .social-links a {
+        .sidebar a {
+            color: #1da1f2;
+            text-decoration: none;
+            margin: 5px 0;
+            display: block;
+        }
+        .content {
+            margin-left: 250px;
+            padding: 20px;
+            width: 100%;
+        }
+        .content h1 {
+            font-size: 24px;
+        }
+        .content a {
+            display: inline-block;
+            margin-right: 10px;
             text-decoration: none;
             color: #333;
-        }
-        /* Main content styling */
-        .main-content {
-            margin-left: 270px; /* space for sidebar */
-            padding: 20px;
-            flex-grow: 1;
-        }
-        .main-content ul {
-            list-style: none;
-            padding: 0;
-        }
-        .main-content li {
-            margin: 10px 0;
-        }
-        .main-content a {
-            text-decoration: none;
-            color: #007acc;
+            font-weight: bold;
         }
     </style>
 </head>
 <body>
-    <!-- Sidebar -->
     <div class="sidebar">
+        <img src="Zakir.jpg" alt="Md Zakir Hossain">
         <h2>Md Zakir Hossain</h2>
-        <img src="Zakir.jpg" alt="Md Zakir Hossain" class="profile-photo">
         <p>I'm a computer vision researcher affiliated with Curtin University, CSIRO, and ANU.</p>
-        <ul class="social-links">
-            <li><a href="https://twitter.com/yourusername" target="_blank">Twitter</a></li>
-            <li><a href="https://scholar.google.com/citations?user=yourid" target="_blank">G. Scholar</a></li>
-            <li><a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn</a></li>
-            <li><a href="mailto:youremail@example.com">E-Mail</a></li>
-        </ul>
+        <a href="https://twitter.com/yourusername" target="_blank">Twitter</a>
+        <a href="https://scholar.google.com/citations?user=yourid" target="_blank">G. Scholar</a>
+        <a href="https://www.linkedin.com/in/yourusername/" target="_blank">LinkedIn</a>
+        <a href="mailto:your.email@example.com">E-Mail</a>
     </div>
     
-    <!-- Main content with links to 8 pages -->
-    <div class="main-content">
-        <h1>Linked Pages</h1>
-        <ul>
-            <li><a href="Research.html">Research</a></li>
-            <li><a href="page2.html">Page 2</a></li>
-            <li><a href="page3.html">Page 3</a></li>
-            <li><a href="page4.html">Page 4</a></li>
-            <li><a href="page5.html">Page 5</a></li>
-            <li><a href="page6.html">Page 6</a></li>
-            <li><a href="page7.html">Page 7</a></li>
-            <li><a href="page8.html">Page 8</a></li>
-        </ul>
+    <div class="content">
+        <h1>Welcome to My GitHub Pages Site</h1>
+        <p>Select a page below to learn more:</p>
+        <div>
+            <a href="Research.html">Research</a>
+            <a href="page2.html">Page 2</a>
+            <a href="page3.html">Page 3</a>
+            <a href="page4.html">Page 4</a>
+            <a href="page5.html">Page 5</a>
+            <a href="page6.html">Page 6</a>
+            <a href="page7.html">Page 7</a>
+            <a href="page8.html">Page 8</a>
+        </div>
     </div>
 </body>
 </html>
-
