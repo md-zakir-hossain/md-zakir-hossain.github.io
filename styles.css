@@ -39,6 +39,7 @@ img {
     font-size: 14px;
     color: #ddd;
     margin: 10px 0;
+    text-align: justify; /* Justify text */
 }
 
 .sidebar a {
@@ -51,7 +52,7 @@ img {
 
 .sidebar a i {
     margin-right: 8px; /* Space between icon and text */
-    font-size: 1.2em;  /* Adjust icon size if needed */
+    font-size: 1.2em; /* Adjust icon size if needed */
 }
 
 /* Content */
@@ -63,6 +64,7 @@ img {
     line-height: 1.6; /* Adds readability to paragraphs */
     color: #333; /* Text color */
     width: calc(100% - 340px);
+    text-align: justify; /* Justify text */
 }
 
 .content h1 {
@@ -87,6 +89,7 @@ img {
     font-size: 1rem; /* Default font size */
     line-height: 1.6; /* Comfortable line spacing */
     color: #333;
+    text-align: justify; /* Justify text */
 }
 
 /* Mobile Styles */
@@ -94,11 +97,14 @@ img {
     .content {
         font-size: 0.9rem; /* Reduce font size for mobile */
         padding: 10px; /* Narrow padding */
+        text-align: justify;
     }
 
     #bottom-content {
         font-size: 0.85rem;
+        text-align: justify;
     }
+    
     .sidebar {
         position: relative;
         width: 100%;
@@ -129,6 +135,7 @@ img {
         padding: 15px;
         width: 100%;
     }
+
     .content h1 {
         font-size: 20px;
     }
