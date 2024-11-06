@@ -3,6 +3,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    display: flex;
 }
 
 img {
@@ -14,18 +15,19 @@ img {
 .sidebar {
     background-color: #333;
     color: #fff;
-    width: 300px;
+    width: 250px;
     padding: 20px;
     position: fixed;
+    top: 0;
+    left: 0;
     height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    text-align: left;
 }
 
 .sidebar img {
-    width: 150px;
+    width: 120px;
     border-radius: 50%;
     margin-bottom: 10px;
 }
@@ -39,7 +41,7 @@ img {
     font-size: 14px;
     color: #ddd;
     margin: 10px 0;
-    text-align: justify; /* Justify text */
+    text-align: justify;
 }
 
 .sidebar a {
@@ -51,24 +53,29 @@ img {
 }
 
 .sidebar a i {
-    margin-right: 8px; /* Space between icon and text */
-    font-size: 1.2em; /* Adjust icon size if needed */
+    margin-right: 8px;
+    font-size: 1.2em;
 }
 
 /* Content */
+.main-content-wrapper {
+    margin-left: 270px; /* Offset for sidebar width plus margin */
+    padding: 20px;
+    width: calc(100% - 290px); /* Ensures the content does not overlap the sidebar */
+}
+
 .content {
-    max-width: 800px; /* Limits width for readability */
-    margin: 0 auto; /* Centers content */
-    padding: 20px; /* Adds space around the content */
-    font-size: 1rem; /* Default font size */
-    line-height: 1.6; /* Adds readability to paragraphs */
-    color: #333; /* Text color */
-    width: calc(100% - 340px);
-    text-align: justify; /* Justify text */
+    max-width: 1000px;
+    margin: 0 auto;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333;
+    text-align: justify;
 }
 
 .content h1 {
     font-size: 24px;
+    text-align: left;
 }
 
 .content a {
@@ -79,45 +86,36 @@ img {
     font-weight: bold;
 }
 
-/* Styling for bottom content where loaded text will display */
+/* Bottom Content */
 #bottom-content {
-    max-width: 800px; /* Limit max width for readability */
-    margin: 20px auto; /* Center-aligns content with spacing */
+    max-width: 1000px;
+    margin: 20px auto;
     padding: 20px;
     border-top: 1px solid #ccc;
     background-color: #f9f9f9;
-    font-size: 1rem; /* Default font size */
-    line-height: 1.6; /* Comfortable line spacing */
+    font-size: 1rem;
+    line-height: 1.6;
     color: #333;
-    text-align: justify; /* Justify text */
+    text-align: justify;
 }
 
 /* Mobile Styles */
 @media (max-width: 768px) {
-    .content {
-        font-size: 0.9rem; /* Reduce font size for mobile */
-        padding: 10px; /* Narrow padding */
-        text-align: justify;
+    body {
+        flex-direction: column;
     }
 
-    #bottom-content {
-        font-size: 0.85rem;
-        text-align: justify;
-    }
-    
     .sidebar {
-        position: relative;
         width: 100%;
         height: auto;
         flex-direction: row;
         align-items: center;
         justify-content: space-around;
         padding: 10px;
-        text-align: center;
     }
     
     .sidebar img {
-        width: 80px; /* Smaller image on mobile */
+        width: 80px;
         margin: 0 10px;
     }
 
@@ -127,10 +125,10 @@ img {
     }
 
     .sidebar p {
-        display: none; /* Hide description on smaller screens to save space */
+        display: none;
     }
 
-    .content {
+    .main-content-wrapper {
         margin-left: 0;
         padding: 15px;
         width: 100%;
@@ -138,5 +136,10 @@ img {
 
     .content h1 {
         font-size: 20px;
+    }
+
+    #bottom-content {
+        font-size: 0.9rem;
+        padding: 15px;
     }
 }
