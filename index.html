@@ -17,23 +17,23 @@
         }
     </script>
     <script>
-    function loadContent(page) {
-        fetch(page)
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error('Page not found');
-                }
-                return response.text();
-            })
-            .then(data => {
-                document.getElementById('bottom-content').innerHTML = data;
-            })
-            .catch(error => {
-                document.getElementById('bottom-content').innerHTML = "<p>Error loading content.</p>";
-                console.error("Error:", error);
-            });
-    }
-</script>
+        function loadContent(page) {
+            fetch(page)
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Page not found');
+                    }
+                    return response.text();
+                })
+                .then(data => {
+                    document.getElementById('bottom-content').innerHTML = data;
+                })
+                .catch(error => {
+                    document.getElementById('bottom-content').innerHTML = "<p>Error loading content.</p>";
+                    console.error("Error:", error);
+                });
+        }
+    </script>
 </head>
 <body onload="loadSidebar()">
     <div id="sidebar-container"></div>
