@@ -59,12 +59,12 @@ img {
 .content {
     max-width: 800px; /* Limits width for readability */
     margin: 0 auto; /* Centers content */
-    padding: 20px; /* Adds space around the content */
+    padding: 10px; /* Adds space around the content */
     font-size: 1rem; /* Default font size */
     line-height: 1.6; /* Adds readability to paragraphs */
     color: #333; /* Text color */
     width: calc(100% - 240px);
-    text-align: justify; /* Justify text */
+    text-align: left; 
 }
 
 .content h1 {
