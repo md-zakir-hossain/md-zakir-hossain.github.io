@@ -92,6 +92,11 @@ img {
     text-align: left; 
 }
 
+a {
+    text-decoration: underline;
+    font-weight: normal;
+}
+
 /* Mobile Styles */
 @media (max-width: 480px) {
     .content {
