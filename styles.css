@@ -61,6 +61,16 @@ body {
     font-size: 1.5em;
 }
 
+/* Sidebar Image Styling */
+.profile-image {
+    width: 100px;              /* Set a fixed width to control the size */
+    height: 100px;             /* Match height to width for a perfect circle */
+    border-radius: 50%;        /* Makes the image circular */
+    object-fit: cover;         /* Ensures the image covers the entire circle */
+    margin-bottom: 15px;       /* Adds spacing below the image */
+}
+
+
 /* Main Content */
 .content {
     margin-left: 270px;
