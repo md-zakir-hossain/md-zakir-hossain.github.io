@@ -3,31 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zakir Hossain</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link to CSS file -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Two-Sided Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
-    <!-- Sidebar -->
-    <iframe src="sidebar.html" class="sidebar-frame" style="border:none; width:250px; height:100vh;"></iframe>
+    <div class="container">
+        <!-- Left Side: Profile Section -->
+        <div class="profile-section">
+            <img src="your-profile-photo.jpg" alt="Profile Picture" class="profile-photo">
+            <h2>Salman Khan</h2>
+            <div class="social-links">
+                <a href="https://linkedin.com/in/yourusername" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="https://scholar.google.com/citations?user=yourid" target="_blank"><i class="fas fa-book"></i> Google Scholar</a>
+                <a href="https://orcid.org/your-orcid-id" target="_blank"><i class="fab fa-orcid"></i> ORCID</a>
+                <a href="mailto:your.email@example.com"><i class="fas fa-envelope"></i> E-Mail</a>
+            </div>
+        </div>
 
-    <!-- Main Content -->
-    <div class="main-content">
-            <h1>I am glad, you are here. Welcome!!</h1>
-            <p>Select a page below to learn more:</p>
+        <!-- Right Side: Page Links -->
+        <div class="content-section">
+            <h1>Explore Pages</h1>
+            <div class="page-links">
+                <a href="#" onclick="loadContent('page1.html'); return false;">Page 1</a>
+                <a href="#" onclick="loadContent('page2.html'); return false;">Page 2</a>
+                <a href="#" onclick="loadContent('page3.html'); return false;">Page 3</a>
+                <a href="#" onclick="loadContent('page4.html'); return false;">Page 4</a>
+                <a href="#" onclick="loadContent('page5.html'); return false;">Page 5</a>
+                <a href="#" onclick="loadContent('page6.html'); return false;">Page 6</a>
+                <a href="#" onclick="loadContent('page7.html'); return false;">Page 7</a>
+                <a href="#" onclick="loadContent('page8.html'); return false;">Page 8</a>
+            </div>
+        </div>
     </div>
-    <nav>
-        <a href="#" onclick="loadContent('about.html'); return false;">About</a>
-        <a href="#" onclick="loadContent('Research.html'); return false;">Research</a>
-        <a href="#" onclick="loadContent('publications.html'); return false;">Publications</a>
-        <a href="#" onclick="loadContent('teaching.html'); return false;">Teaching</a>
-        <a href="#" onclick="loadContent('employment.html'); return false;">Employment</a>
-        <a href="#" onclick="loadContent('achievements.html'); return false;">Achievements</a>
-        <a href="#" onclick="loadContent('services.html'); return false;">Services</a>
-        <a href="#" onclick="loadContent('people.html'); return false;">People</a>
-        <a href="#" onclick="loadContent('CV.html'); return false;">CV</a>
-    </nav>
-    <!-- Bottom content area to display loaded content -->
-    <div id="bottom-content"></div>
+
+    <!-- Bottom Content Area for Loaded Pages -->
+    <div id="bottom-content">
+        <h2>Loaded Content</h2>
+        <div id="content-display">
+            <p>Click on a page link to load content here.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
