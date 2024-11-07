@@ -1,21 +1,27 @@
+/* General Styles */
 body {
-    display: flex;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Sidebar */
 .sidebar {
     background-color: #333;
     color: #fff;
-    width: 300px; /* Sidebar width */
+    width: 300px;
     padding: 20px;
     position: fixed;
     height: 100vh;
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Align items to the left */
-    text-align: left; /* Align text to the left */
+    align-items: flex-start;
+    text-align: left;
 }
 
 .sidebar img {
@@ -39,14 +45,24 @@ body {
     color: #1da1f2;
     text-decoration: none;
     margin: 5px 0;
-    display: block;
-    width: 100%; /* Ensures the link fills the width */
+    display: flex;
+    align-items: center;
 }
 
+.sidebar a i {
+    margin-right: 8px; /* Space between icon and text */
+    font-size: 1.2em;  /* Adjust icon size if needed */
+}
+
+/* Content */
 .content {
-    margin-left: 340px; /* Increased margin for more space */
-    padding: 20px;
-    width: calc(100% - 340px); /* Adjust width to fill remaining space */
+    max-width: 800px; /* Limits width for readability */
+    margin: 0 auto; /* Centers content */
+    padding: 20px; /* Adds space around the content */
+    font-size: 1rem; /* Default font size */
+    line-height: 1.6; /* Adds readability to paragraphs */
+    color: #333; /* Text color */
+    width: calc(100% - 340px);
 }
 
 .content h1 {
@@ -59,4 +75,61 @@ body {
     text-decoration: none;
     color: #333;
     font-weight: bold;
+}
+
+/* Styling for bottom content where loaded text will display */
+#bottom-content {
+    max-width: 800px; /* Limit max width for readability */
+    margin: 20px auto; /* Center-aligns content with spacing */
+    padding: 20px;
+    border-top: 1px solid #ccc;
+    background-color: #f9f9f9;
+    font-size: 1rem; /* Default font size */
+    line-height: 1.6; /* Comfortable line spacing */
+    color: #333;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .content {
+        font-size: 0.9rem; /* Reduce font size for mobile */
+        padding: 10px; /* Narrow padding */
+    }
+
+    #bottom-content {
+        font-size: 0.85rem;
+    }
+    .sidebar {
+        position: relative;
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        padding: 10px;
+        text-align: center;
+    }
+    
+    .sidebar img {
+        width: 80px; /* Smaller image on mobile */
+        margin: 0 10px;
+    }
+
+    .sidebar h2 {
+        font-size: 16px;
+        margin: 0;
+    }
+
+    .sidebar p {
+        display: none; /* Hide description on smaller screens to save space */
+    }
+
+    .content {
+        margin-left: 0;
+        padding: 15px;
+        width: 100%;
+    }
+    .content h1 {
+        font-size: 20px;
+    }
 }
