@@ -18,13 +18,8 @@
     </script>
 </head>
 
-<body>
-    <div class="container">
-        <!-- Sidebar Section -->
-        <div class="sidebar">
-            <!-- Include Sidebar HTML file -->
-            <iframe src="sidebar.html" style="border:none;width:100%;height:100vh;"></iframe>
-        </div>
+<body onload="loadSidebar()"> <!-- Load sidebar on page load -->
+    <div id="sidebar-container"></div> <!-- Placeholder for sidebar -->
         <div class="content">
             <p>I am a Senior Research Fellow at <a href="https://staffportal.curtin.edu.au/staff/profile/view/md-zakir-hossain-4fd95ece/" target="_blank">the School of Electrical Engineering, Computing and Mathematical Sciences (EECMS)</a>
                 at Curtin University in Perth, with a past affiliation with <a href="https://staffportal.curtin.edu.au/staff/profile/view/md-zakir-hossain-4fd95ece/" target="_blank">the Optus-Curtin Centre of Excellence in AI</a>. 
@@ -54,6 +49,5 @@
                 <li>Item 4</li>
             </ul> 
         </div>
-    </div>
 </body>
 </html>
