@@ -6,37 +6,11 @@
     <title>Zakir Hossain</title>
     <link rel="stylesheet" href="styles.css"> <!-- Link to CSS file -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <script>
-        function loadSidebar() {
-            fetch('sidebar.html')
-                .then(response => response.text())
-                .then(data => {
-                    document.getElementById('sidebar-container').innerHTML = data;
-                })
-                .catch(error => console.error('Error loading sidebar:', error));
-        }
-    </script>
-    <script>
-        function loadContent(page) {
-            fetch(page)
-                .then(response => {
-                    if (!response.ok) {
-                        throw new Error('Page not found');
-                    }
-                    return response.text();
-                })
-                .then(data => {
-                    document.getElementById('bottom-content').innerHTML = data;
-                })
-                .catch(error => {
-                    document.getElementById('bottom-content').innerHTML = "<p>Error loading content.</p>";
-                    console.error("Error:", error);
-                });
-        }
-    </script>
 </head>
-<body onload="loadSidebar()"> <!-- Load sidebar on page load -->
-    <div id="sidebar-container"></div> <!-- Placeholder for sidebar -->
+<body>
+    <div class="container">
+        <!-- Sidebar Section loaded with iframe -->
+        <iframe src="sidebar.html" class="sidebar"></iframe>
 
         <!-- Main Content Section -->
         <div class="content">
@@ -54,6 +28,7 @@
                 <a href="#" onclick="loadContent('CV.html'); return false;">CV</a>
             </div>
         </div>
+    </div>
 
     <!-- Bottom content area to display loaded content -->
     <div id="bottom-content"></div>
