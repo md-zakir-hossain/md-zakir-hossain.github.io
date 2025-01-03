@@ -22,6 +22,8 @@ body {
     width: 250px;
     padding: 20px;
     text-align: center;
+    position: fixed;
+    height: 100%;
 }
 
 .profile-photo {
@@ -78,10 +80,13 @@ body {
 
 /* Bottom Content Display */
 #bottom-content {
+    margin-left: 25%;
+    width: 75%;
     padding: 20px;
     border-top: 1px solid #ccc;
     background-color: #f4f4f4;
     text-align: center;
+    overflow-y: auto;
 }
 
 #content-display {
