@@ -1,4 +1,9 @@
 function loadContent(page) {
+    const contentDisplay = document.getElementById('content-display');
+    
+    // Display a loading message while fetching the content
+    contentDisplay.innerHTML = `<p>Loading content from ${page}...</p>`;
+    
     fetch(page)
         .then(response => {
             if (!response.ok) throw new Error('Content not found');
@@ -8,7 +13,7 @@ function loadContent(page) {
             document.getElementById("content-display").innerHTML = data;
         })
         .catch(error => {
-            document.getElementById("content-display").innerHTML = "<p>Sorry, the content couldn't be loaded.</p>";
+            document.getElementById("content-display").innerHTML = "<p>Sorry, the content couldn't be loaded. Please try again later.</p>";
             console.error("Error loading content:", error);
         });
 }
