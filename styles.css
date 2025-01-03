@@ -7,26 +7,25 @@
 
 body {
     font-family: Arial, sans-serif;
-    display: flex;
-    height: 100vh;
+    height: 100vh; /* Full viewport height */
     margin: 0;
 }
 
 /* Container Layout */
 .container {
     display: flex;
-    min-height: 100%;
+    height: 100%;
 }
 
 /* Left Side: Profile Section */
 .profile-section {
     background-color: #333;
     color: #fff;
-    width: 25%;
+    width: 25%; /* Fixed width for the profile section */
     padding: 20px;
     text-align: center;
-    position: fixed;
-    height: 100%;
+    position: fixed; /* Keep it fixed on the left side */
+    height: 100%; /* Full height */
 }
 
 .profile-photo {
@@ -56,10 +55,10 @@ body {
 
 /* Right Side: Content Section */
 .content-section {
-    margin-left: 25%; /* Matches the width of .profile-section */
-    width: 75%; /* Remaining space */
-    overflow-y: auto;
+    margin-left: 25%; /* Leaves space for the fixed profile section */
+    width: 75%; /* Remaining space for the content section */
     padding: 20px;
+    overflow-y: auto; /* Enable scrolling if the content overflows */
 }
 
 .content-section h1 {
@@ -85,13 +84,12 @@ body {
 
 /* Bottom Content Display */
 #bottom-content {
-    margin-left: 25%;
-    width: 75%;
+    margin-left: 25%; /* Aligns with the content section */
+    width: 75%; /* Matches the width of .content-section */
     padding: 20px;
     border-top: 2px solid #ddd;
     background-color: #f4f4f4;
-    text-align: center;
-    overflow-y: auto;
+    overflow-y: auto; /* Enable scrolling if the content overflows */
 }
 
 #content-display {
@@ -99,3 +97,4 @@ body {
     font-size: 1rem;
     color: #333;
 }
+
