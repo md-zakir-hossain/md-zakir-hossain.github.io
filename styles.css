@@ -22,7 +22,7 @@ body {
     background-color: #333;
     color: #fff;
     width: 25%; /* Fixed width for the profile section */
-    padding: 20px;
+    padding: 10px;
     text-align: center;
     position: fixed; /* Keep it fixed on the left side */
     height: 100%; /* Full height */
