@@ -119,13 +119,13 @@ body {
         width: 100%;
         position: relative;
         height: auto;
-        padding: 20px;
     }
-    .content-section, #bottom-content {
+    .content-section {
         margin-left: 0;
         width: 100%;
     }
-}
-
-    color: #333;
+    #bottom-content {
+        margin-left: 0;
+        width: 100%;
+    }
 }
