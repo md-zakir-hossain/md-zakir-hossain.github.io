@@ -59,7 +59,7 @@ body {
     width: 75%; /* Remaining space for the content section */
     padding-top: 0px !important;
     margin-top: 0px !important;
-    overflow-y: relative; /* Enable scrolling if the content overflows */
+    position: relative; /* Enable scrolling if the content overflows */
 }
 
 .content-section h1 {
