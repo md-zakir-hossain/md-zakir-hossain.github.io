@@ -7,7 +7,8 @@
 
 body {
     font-family: Arial, sans-serif;
-    height: 100vh; /* Full viewport height */
+    height: auto; /* Allow content to determine height */
+    min-height: 100vh; /* Ensure it covers the full viewport if needed */
     margin: 0;
 }
 
