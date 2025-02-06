@@ -20,8 +20,8 @@ body {
 
 /* Left Side: Profile Section */
 .profile-section {
-    background-color: #333;
-    color: #fff;
+    background-color: #fff;
+    color: #333;
     width: 25%; /* Fixed width for the profile section */
     padding: 10px;
     text-align: center;
