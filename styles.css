@@ -55,11 +55,10 @@ body {
 
 /* Right Side: Content Section */
 .content-section {
-    margin-left: 25%; /* Leaves space for the fixed profile section */
+    position: absolute; 
+    top: 0;
+    left: 25%; /* Leaves space for the fixed profile section */
     width: 75%; /* Remaining space for the content section */
-    padding-top: 0px !important;
-    margin-top: 0px !important;
-    position: relative; /* Enable scrolling if the content overflows */
 }
 
 .content-section h1 {
