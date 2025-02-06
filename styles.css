@@ -99,6 +99,33 @@ body {
 #content-display {
     margin-top: 0px;
     font-size: 1rem;
-    color: #333;
+
+/* Responsive Design Adjustments */
+@media (max-width: 1024px) {
+    .profile-section {
+        width: 30%; /* Adjust profile section width */
+    }
+    .content-section, #bottom-content {
+        margin-left: 30%; /* Adjust content position */
+        width: 70%;
+    }
 }
 
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    .profile-section {
+        width: 100%;
+        position: relative;
+        height: auto;
+        padding: 20px;
+    }
+    .content-section, #bottom-content {
+        margin-left: 0;
+        width: 100%;
+    }
+}
+
+    color: #333;
+}
