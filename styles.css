@@ -103,6 +103,13 @@ body {
     margin-top: 0px;
     font-size: 1rem;
 
+    
+p {
+    line-height: 1.6; /* Increases space between lines */
+    margin-bottom: 15px; /* Adds space between paragraphs */
+}
+
+    
 /* Responsive Design Adjustments */
 @media (max-width: 1024px) {
     .profile-section {
