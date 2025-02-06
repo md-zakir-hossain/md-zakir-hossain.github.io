@@ -17,3 +17,8 @@ function loadContent(page) {
             console.error("Error loading content:", error);
         });
 }
+
+// Automatically load the Home page content on page load
+window.onload = function() {
+    loadContent('Home.html');
+};
