@@ -55,10 +55,11 @@ body {
 
 /* Right Side: Content Section */
 .content-section {
-    position: absolute; 
-    top: 0;
-    left: 25%; /* Leaves space for the fixed profile section */
-    width: 75%; /* Remaining space for the content section */
+    margin-left: 25%;
+    width: 75%;
+    max-height: calc(100vh - 50px); /* Adjust based on menu height */
+    overflow-y: auto;
+    position: relative;
 }
 
 .content-section h1 {
