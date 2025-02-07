@@ -115,6 +115,10 @@ a {
     color: inherit; /* Keep text color the same as surrounding text */
 }
 
+ul {
+    list-style-type: circle; /* Other options: square, disc */
+}
+
 /* Responsive Design Adjustments */
 @media (max-width: 1024px) {
     .profile-section {
