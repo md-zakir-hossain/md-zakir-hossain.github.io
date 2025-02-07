@@ -45,9 +45,10 @@ body {
 
 /* Ensure the text container has the same width as the photo */
 .profile-description {
-    width: 100px;  /* Same width as the profile photo */
+    width: 140px;  /* Same width as the profile photo */
     text-align: center; /* Align text within the container */
     margin-top: 10px;
+    margin-bottom: 15px;
 }
 
 .social-links a {
