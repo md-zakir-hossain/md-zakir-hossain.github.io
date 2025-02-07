@@ -109,7 +109,12 @@ p {
     margin-bottom: 15px; /* Adds space between paragraphs */
 }
 
-    
+a {
+    text-decoration: none; /* Remove default underline */
+    border-bottom: 1px dotted currentColor; /* Dotted underline */
+    color: inherit; /* Keep text color the same as surrounding text */
+}
+
 /* Responsive Design Adjustments */
 @media (max-width: 1024px) {
     .profile-section {
