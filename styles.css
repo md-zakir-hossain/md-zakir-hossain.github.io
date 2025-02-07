@@ -124,7 +124,20 @@ a {
 }
 
 ul {
-    list-style-type: circle; /* Other options: square, disc */
+    list-style-type: none; /* Remove default bullets */
+    padding-left: 0;
+}
+
+ul li {
+    position: relative;
+    padding-left: 20px; /* Space for the checkmark */
+}
+
+ul li::before {
+    content: "✔"; /* Unicode checkmark */
+    position: absolute;
+    left: 0;
+    color: blue; /* Choose your preferred color */
 }
 
 /* Responsive Design Adjustments */
