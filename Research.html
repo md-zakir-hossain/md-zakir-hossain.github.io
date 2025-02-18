@@ -16,6 +16,20 @@
                 .catch(error => console.error('Error loading sidebar:', error));
         }
     </script>
+    <style>
+        .parallel {
+          display: flex;
+          align-items: flex-start;
+          gap: 20px; /* Adjust spacing between image and paragraph */
+        }
+        .parallel img {
+          max-width: 50%; /* Adjust image width as needed */
+          height: auto;
+        }
+        .parallel p {
+          flex: 1;
+        }
+    </style>
 </head>
 <body onload="loadSidebar()">
     <div id="sidebar-container"></div>   
@@ -23,10 +37,12 @@
         <h1>Research</h1>
         <section>
             <h2>Life-long Learning</h2>
-            <img src="https://salman-h-khan.github.io/images/LifelongLearning.png" alt="Life-long Learning">
-            <p>
-                The ability to incrementally learn novel tasks and acquire new knowledge is necessary for life-long machine learning.
-            </p>
+            <div class="parallel">
+                <img src="https://salman-h-khan.github.io/images/LifelongLearning.png" alt="Life-long Learning">
+                <p>
+                    The ability to incrementally learn novel tasks and acquire new knowledge is necessary for life-long machine learning.
+                </p>
+            </div>
         </section>
         <p>Under Construction......</p>
         <p><a href="index.html">Back to Home</a></p>
