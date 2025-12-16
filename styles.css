@@ -123,6 +123,12 @@ a {
     color: inherit; /* Keep text color the same as surrounding text */
 }
 
+.sub-links a {
+    padding: 6px 10px;
+    font-size: 0.95rem;
+    margin-right: 8px;
+}
+
 ul {
     list-style-type: none; /* Remove default bullets */
     padding-left: 0;
