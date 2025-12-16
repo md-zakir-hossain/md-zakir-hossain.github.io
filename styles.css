@@ -146,6 +146,14 @@ ul li::before {
     color: blue; /* Choose your preferred color */
 }
 
+.pub-list {
+    padding-left: 20px;
+}
+
+.pub-list li {
+    margin-bottom: 10px;
+}
+
 /* Responsive Design Adjustments */
 @media (max-width: 1024px) {
     .profile-section {
